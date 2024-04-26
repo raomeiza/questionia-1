@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="icon" href="assets/img/logo with text512.png" />
+    <script defer scr="assets/js/bootstrap.bundle.min.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    <title>Questionia - Register</title>
+  </head>
+  <body>
+    <div class="container-fluid main-container">
+      <div class="div circle-1"></div>
+      <div class="div circle-2"></div>
+      <div class="div circle-3"></div>
+      <div class="row main-row">
+        <div class="col img-col">
+          <img
+            src="assets/img/logo with text512.png"
+            alt="Logo"
+            width="100"
+            height="50"
+          />
+        </div>
+        <div class="col-sm-5 register-col">
+          <h2>Register</h2>
+          <form
+            action="login.html"
+            name="Formfill"
+            onsubmit="return validation()"
+          >
+            <div class="input-box">
+              <label for="input">Email</label>
+              <input type="email" name="email" placeholder="EMAIL" />
+            </div>
+            <em id="email-error" class="error-1"></em>
+
+            <div class="input-box">
+              <label for="password">Password</label>
+              <input type="password" name="password" placeholder="PASSWORD" />
+            </div>
+            <em id="password-error" class="error-2"></em>
+
+            <div class="input-box">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="cpassword"
+                placeholder="REPEAT PASSWORD"
+              />
+            </div>
+            <em id="cpassword-error" class="error-3"></em>
+
+            <div class="btn-box">
+              <button>Register</button>
+            </div>
+            <h5 class="or">or</h5>
+            <div class="media-icons">
+              <span><i class="fab fa-google" style="color: red"></i></span>
+              <span
+                ><i class="fab fa-twitter" style="color: #a201f8b7"></i
+              ></span>
+              <span><i class="fab fa-github"></i></span>
+              <span><i class="fab fa-facebook" style="color: blue"></i></span>
+            </div>
+            <div class="login-link">
+              <p>Already Have An Account? <a href="login.html">Login</a></p>
+            </div>
+          </form>
+          <div id="popup" class="validation" onclick="return closeSlide()">
+            <div class="check">
+              <span><i class="fas fa-check"></i></span>
+            </div>
+            <p class="successful">REGISTRATION SUCCESSFUL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
